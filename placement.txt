@@ -1,0 +1,23 @@
+DESIGN
+
+COMPONENTS 5 ;
+	- u1 NAND2_X1
+		+ PLACED ( 0 0 ) ;
+	- f1 DFF_X1
+		+ PLACED ( 1 0 ) ;
+	- u2 INV_X1
+		+ PLACED ( 0 1 ) ;
+	- u3 INV_X1
+		+ PLACED ( 1 1 ) ;
+	- u4 NOR2_X1
+		+ PLACED ( 2 2 ) ;
+END COMPONENTS
+
+NETS 4 ;
+	- n1 ( u1 u4 ) ;
+	- n2 ( u4 f1 ) ;
+	- n3 ( f1 u2 u4 ) ;
+	- n4 ( u2 u3) ;
+END NETS
+
+END DESIGN

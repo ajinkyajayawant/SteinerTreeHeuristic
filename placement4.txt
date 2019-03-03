@@ -1,0 +1,37 @@
+DESIGN
+
+COMPONENTS 12 ;
+	- u1 NOR2_X1
+		+ PLACED ( 1 0 ) ;
+	- u2 NOR2_X2
+		+ PLACED ( 2 0 ) ;
+	- u3 NOR2_X3
+		+ PLACED ( 3 0 ) ;
+	- u4 NOR2_X4
+		+ PLACED ( 0 3 ) ;
+	- u5 NOR2_X5
+		+ PLACED ( 0 4 ) ;
+	- u6 NOR2_X6
+		+ PLACED ( 0 5 ) ;
+	- u7 NOR2_X7
+		+ PLACED ( 4 3 ) ;
+	- u8 NOR2_X8
+		+ PLACED ( 4 4 ) ;
+	- u9 NOR2_X9
+		+ PLACED ( 4 5 ) ;
+	- u10 NOR2_X10
+		+ PLACED ( 1 9 ) ;
+	- u11 NOR2_X11
+		+ PLACED ( 2 9 ) ;
+	- u12 NOR2_X12
+		+ PLACED ( 3 9 ) ;
+END COMPONENTS
+
+NETS 4 ;
+	- n1 ( u1 u4 ) ;
+	- n2 ( u4 f1 ) ;
+	- n3 ( f1 u2 u4 ) ;
+	- n4 ( u2 u3) ;
+END NETS
+
+END DESIGN
